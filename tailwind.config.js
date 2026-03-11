@@ -1,0 +1,41 @@
+module.exports = {
+  content: [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.js",
+    "./src/**/*.jsx",
+    "./public/**/*.html"
+  ],
+  safelist: [
+    "text-blue-600",
+    "bg-blue-500",
+    "text-white",
+    "bg-red-500",
+    "text-gray-500",
+    "font-bold",
+    "font-semibold",
+    "text-lg",
+    "text-3xl",
+    "mb-6",
+    "p-2",
+    "rounded",
+    "px-4",
+    "px-3",
+    "shadow-md",
+    "shadow",
+    "rounded-xl",
+    "gap-2",
+    "max-w-3xl",
+    "min-h-screen",
+    "flex",
+    "grid",
+    "items-center",
+    "justify-between",
+    "w-full",
+    "border"
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};

@@ -6,6 +6,8 @@
     2. jangan gunakan `process.env`, tapi gunakan dari import env di env.ts
 ========================= */
 
+// File ini sudah dipindahkan ke src/config/db.ts dan env ke src/config/env.ts
+
 import { Database } from "bun:sqlite";
 
 const dbFile = process.env.DB_FILE || "database.sqlite";

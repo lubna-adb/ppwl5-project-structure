@@ -1,16 +1,18 @@
 {
-  "name": "ppwl5-latihan",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+  "name": "ppwl5-project-structure",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun --watch src/server.ts",
+    "start": "bun src/server.ts",
+    "css": "bunx tailwindcss -i src/input.css -o public/css/style.css --watch --content './src/**/*.ts'",
+    "css:build": "bunx tailwindcss -i src/input.css -o public/css/style.css --minify --content './src/**/*.ts'"
   },
   "dependencies": {
-    "@elysiajs/static": "^1.4.7",
-    "elysia": "^1.4.27"
+    "@elysiajs/static": "latest",
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "latest",
+    "tailwindcss": "latest"
   }
 }
